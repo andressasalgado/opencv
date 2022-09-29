@@ -7,6 +7,9 @@ imagem = cv2.imread("lampada.png")
 # Converter a imagem para escala de cinza
 imagem_pb = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
 
+#salva a nova imagem criada
+cv2.imwrite("imagempb.png", imagem_pb)
+
 # Criar duas telas para apresentar as imagens
 cv2.imshow("Original", imagem)
 cv2.imshow("PB", imagem_pb)
