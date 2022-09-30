@@ -29,5 +29,8 @@ print ("Cor do pixel em (250, 305) - Vermelho: %d, Verde: %d, Azul: %d" % (r, g,
 (b, g, r) = imagem[30, 250]
 print ("Cor do pixel em (250, 30) - Vermelho: %d, Verde: %d, Azul: %d" % (r, g, b))
 
+# Salva a nova imagem no diretorio
+cv2.imwrite("imagempb.png", imagem_pb)
+
 # Comando para aguardar interrupcao do usuario para fechar a tela
 cv2.waitKey()
